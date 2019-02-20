@@ -9,3 +9,7 @@ multi sub MAIN (｢set-package.json-version-from-github-ref｣) {
 	$manifest<version> = $version.Str;
 	spurt $file, to-json($manifest) ~ "\n";
 }
+
+multi sub MAIN (｢honk｣) {
+	die ｢honk honk｣
+}
