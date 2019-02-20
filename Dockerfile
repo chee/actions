@@ -10,8 +10,6 @@ LABEL com.github.actions.description="i eat cheese, i eat po"
 LABEL com.github.actions.icon="smile"
 LABEL com.github.actions.color="yellow"
 
-RUN zef install JSON::Pretty
-
 COPY "commands.p6" "/commands.p6"
 COPY "entrypoint.sh" "/entrypoint.sh"
 ENTRYPOINT [ /entrypoint.sh ]
