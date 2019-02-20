@@ -11,6 +11,6 @@ LABEL com.github.actions.icon="umbrella"
 LABEL com.github.actions.color="yellow"
 
 RUN zef install JSON::Pretty
-COPY "commands.p6" "/commands.p6"
-ENTRYPOINT [ "/commands.p6" ]
+COPY "entrypoint.p6" "/entrypoint.p6"
+ENTRYPOINT [ "/entrypoint.p6" ]
 CMD ["--help"]
