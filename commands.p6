@@ -11,5 +11,5 @@ multi sub MAIN (｢set-package.json-version-from-github-ref｣) {
 }
 
 multi sub MAIN (｢honk｣) {
-	die ｢honk honk｣
+	exit 78;
 }
