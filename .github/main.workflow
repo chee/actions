@@ -1,9 +1,19 @@
-workflow "New workflow" {
+workflow "neutral" {
   on = "push"
-  resolves = ["chee's actions"]
+  resolves = ["neuter"]
 }
 
-action "chee's actions" {
+action "neuter" {
   uses = "./"
-  args = "honk --help"
+  args = "neut"
+}
+
+workflow "success" {
+  on = "push"
+  resolves = ["pass"]
+}
+
+action "pass" {
+  uses = "./"
+  args = "pass"
 }
