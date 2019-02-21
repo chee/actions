@@ -10,6 +10,14 @@ multi sub MAIN (｢set-package.json-version-from-github-ref｣) {
 	spurt $file, to-json($manifest) ~ "\n";
 }
 
-multi sub MAIN (｢honk｣) {
+multi sub MAIN (｢pass｣) {
+	exit 0;
+}
+
+multi sub MAIN (｢neut｣) {
 	exit 78;
+}
+
+multi sub MAIN (｢fail｣) {
+	exit 1;
 }
